@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class TaskFour{
+public static void main(String[] args){
+
+	Scanner input = new Scanner(System.in);
+
+	System.out.print("Enter a number: ");
+	int number = input.nextInt();
+	
+	for(int index = 1; index <= 12; index++){
+		int result = number*index;
+		System.out.printf("%d X %d = %d%n", number, index, result);
+	}
+
+
+}
+
+}

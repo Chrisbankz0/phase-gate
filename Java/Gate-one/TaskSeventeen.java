@@ -1,21 +1,18 @@
 import java.util.Scanner;
 
-public class TaskSeventeen{
+public class TaskSeventeen {
 public static void main(String[] args){
 
 	Scanner input = new Scanner(System.in);
 
-	System.out.print("Enter your password: ");
-	int password = input.nextInt();
+	String password = "";
 
-	if( password == admin123){
-		System.out.print("correct");
-	}
-	else{
-		System.out.print("incorrect");
-	}
+	while (!password.equals("admin123")){
+		System.out.print("Enter your password: ");
+		password = input.nextLine();
+        }
 
+	System.out.println("Access Granted");
 
-}
-
+    }
 }
