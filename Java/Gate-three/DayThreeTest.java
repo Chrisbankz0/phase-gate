@@ -34,4 +34,20 @@ public class DayThreeTest{
 
     }
 
+
+    @Test
+    void testMaxNumber(){
+        int expected = 7;
+        int actual = DayThree.maxNumber(new int[]{12,45,67,43,55,66,76,77});
+        assertEquals(expected, actual);
+    }
+
+
+    @Test
+    void testFindIndex(){
+        int expected = 7;
+        int actual = DayThree.findIndex(new int[]{12,45,67,43,55,66,76,77}, 77);
+        assertEquals(expected, actual);
+    }
+
 }
